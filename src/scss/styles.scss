@@ -1,2 +1,18 @@
-@import "_null";
+@import "base/null";
+@import "base/variables";
 
+
+html{
+	font-family: 'Museo';
+	font-weight: 500;
+}
+.container{
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/benefits";
+@import "blocks/title";
