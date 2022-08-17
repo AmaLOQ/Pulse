@@ -84,7 +84,7 @@ html {
 .promo {
   min-height: 650px;
   padding: 21px 0 93px;
-  background: url(../../img/bg_main.jpg) center center/cover no-repeat;
+  background: url(../img/bg_main.jpg) center center/cover no-repeat;
 }
 .promo__wrapper {
   display: -webkit-box;
@@ -306,6 +306,7 @@ html {
           justify-content: space-between;
 }
 .benefits__item {
+  padding: 0 10px;
   width: 275px;
 }
 .benefits__item img {
@@ -338,6 +339,42 @@ html {
   color: #FF0000;
 }
 
+@media (max-width: 767px) {
+  .benefits {
+    padding: 50px 0 60px;
+  }
+  .benefits__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .benefits__item {
+    margin-bottom: 30px;
+    width: 300px;
+  }
+  .benefits__header {
+    margin-top: 15px;
+    font-size: 25px;
+    line-height: 28px;
+  }
+  .benefits__descr {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (max-width: 575px) {
+  .benefits {
+    padding: 30px 0 40px;
+  }
+  .title {
+    font-size: 26px;
+  }
+}
 .title {
   font-weight: 700;
   font-size: 30px;
