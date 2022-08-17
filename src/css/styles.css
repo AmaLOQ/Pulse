@@ -381,4 +381,24 @@ html {
   line-height: 30px;
   text-align: center;
   color: #0D0D0D;
+  text-transform: uppercase;
+}
+.title_left {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: #FFFFFF;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+.consultation {
+  min-height: 680px;
+  padding: 100px 0 92px;
+  background: url(../img/bg2bg_2.png) center center/cover no-repeat;
+}
+.consultation__descr {
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
 }
