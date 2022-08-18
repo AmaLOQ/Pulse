@@ -4,6 +4,9 @@
 		position: relative;
 		width: 750px;
 		margin: 0 auto;
+		img{
+			width: 100%;
+		}
 	}
 	.slick-prev, .slick-next{
 		position: absolute;
@@ -24,4 +27,25 @@
 			height: 50px;
 		}
 	}
+}
+
+// Media
+@media (max-width: 767px) {
+	.carousel{
+		&__inner{
+			max-width: 100%;
+		}
+	}
+
+	
+}
+@media (max-width: 576px) {
+	.carousel{
+		padding: 40px 0;
+		&__inner{
+			max-width: 100%;
+		}
+	}
+
+	
 }

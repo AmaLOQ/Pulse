@@ -490,6 +490,9 @@ html {
   width: 750px;
   margin: 0 auto;
 }
+.carousel__inner img {
+  width: 100%;
+}
 .carousel .slick-prev, .carousel .slick-next {
   position: absolute;
   top: 50%;
@@ -509,4 +512,18 @@ html {
 .carousel .slick-next img {
   width: 31px;
   height: 50px;
+}
+
+@media (max-width: 767px) {
+  .carousel__inner {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .carousel {
+    padding: 40px 0;
+  }
+  .carousel__inner {
+    max-width: 100%;
+  }
 }
