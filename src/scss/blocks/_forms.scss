@@ -17,3 +17,17 @@
 		}
 	}
 }
+
+// Media
+@media (max-width: 576px) {
+	.feed-form{
+		width: 290px;
+	}
+	
+}
+@media (max-width: 320px) {
+	.feed-form{
+		width: 100%;
+	}
+	
+}
