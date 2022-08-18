@@ -291,6 +291,11 @@ html {
   line-height: 25px;
   text-align: center;
 }
+.button_submit {
+  width: 100%;
+  height: 55px;
+  font-size: 16px;
+}
 
 .benefits {
   padding: 73px 0 83px;
@@ -395,10 +400,35 @@ html {
 .consultation {
   min-height: 680px;
   padding: 100px 0 92px;
-  background: url(../img/bg2bg_2.png) center center/cover no-repeat;
+  background: url("../img/bg2bg_2.png") center center/cover no-repeat;
 }
 .consultation__descr {
   font-size: 20px;
   line-height: 30px;
   color: #FFFFFF;
+}
+
+.feed-form {
+  margin-top: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 300px;
+}
+.feed-form input {
+  height: 54px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  margin-bottom: 15px;
+  border: none;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #4B4B4B;
+}
+.feed-form input:nth-child(3) {
+  margin-bottom: 20px;
 }
