@@ -730,3 +730,52 @@ html {
   color: #C70101;
   text-transform: uppercase;
 }
+
+@media (max-width: 940px) {
+  .catalog__content {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (max-width: 635px) {
+  .catalog__tab {
+    font-size: 14px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 635px) {
+  .catalog__tabs {
+    margin-top: 45px;
+  }
+  .catalog__tab {
+    font-size: 14px;
+    line-height: 52px;
+  }
+  .title_catalog {
+    font-size: 28px;
+  }
+}
+@media (max-width: 475px) {
+  .catalog__tabs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 30px;
+  }
+  .catalog__tabs li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 45%;
+            flex: 0 1 45%;
+  }
+  .catalog__tab {
+    height: 40px;
+    font-size: 14px;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+  .catalog__content {
+    margin-top: 100px;
+  }
+  .title_catalog {
+    font-size: 28px;
+  }
+}
