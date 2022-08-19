@@ -577,12 +577,31 @@ html {
 }
 .catalog__content {
   margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: none;
+}
+.catalog__content_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .catalog-item {
   width: 303px;
   min-height: 440px;
   border: 2px solid #E8E8E8;
   padding: 20px 20px 25px;
+  margin-bottom: 20px;
+  overflow: hidden;
 }
 .catalog-item__img {
   height: 200px;
@@ -615,6 +634,7 @@ html {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #C70101;
+  text-transform: uppercase;
 }
 .catalog-item hr {
   margin: 19px 0 21px;
@@ -645,4 +665,68 @@ html {
   font-size: 20px;
   line-height: 20px;
   color: #050505;
+}
+.catalog-item__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(200% + 40px);
+}
+.catalog-item__content {
+  width: 50%;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  margin-right: 0;
+}
+.catalog-item__content_active {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  margin-right: 20px;
+}
+.catalog-item__list {
+  position: relative;
+  width: 50%;
+  margin-left: 20px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  padding-right: 20px;
+  padding-left: 19px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.catalog-item__list_active {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  margin-left: 0px;
+}
+.catalog-item__list li {
+  position: relative;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: #555555;
+}
+.catalog-item__list li:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #C70101;
+  left: -19px;
+  top: 7px;
+}
+.catalog-item__back {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-69%);
+          transform: translateX(-69%);
+  font-size: 14px;
+  line-height: 14px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #C70101;
+  text-transform: uppercase;
 }
