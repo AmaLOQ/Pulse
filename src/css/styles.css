@@ -1028,3 +1028,28 @@ html {
 #consultation, #order, #thanks {
   display: none;
 }
+
+@media (max-width: 490px) {
+  .modal {
+    padding: 28px 20px 30px 30px;
+    width: 300px;
+  }
+  .modal__close {
+    right: 5px;
+    top: 5px;
+  }
+  .modal__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .modal__descr {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .feed-form {
+    width: 240px;
+  }
+  .button__submit {
+    font-size: 14px;
+  }
+}
