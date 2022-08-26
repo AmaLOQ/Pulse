@@ -22,6 +22,12 @@
 	// .benefits__img
 
 	&__img {
+			&_animated{
+				animation: heartbeat 3s ease infinite;
+				&:hover{
+					animation-play-state: paused;
+				}
+			}
 	}
 
 	// .benefits__header
