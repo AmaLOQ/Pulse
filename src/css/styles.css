@@ -1070,3 +1070,15 @@ html {
     font-size: 14px;
   }
 }
+.pageup {
+  position: fixed;
+  display: none;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+.pageup i {
+  font-size: 50px;
+  color: #C70101;
+}
