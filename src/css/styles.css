@@ -932,7 +932,12 @@ html {
   position: relative;
   min-height: 630px;
 }
-.footer____info {
+.footer__iframe {
+  width: 100%;
+  height: 630px;
+  border: none;
+}
+.footer__info {
   padding: 50px 65px 60px 65px;
   position: absolute;
   top: 0;
@@ -1001,7 +1006,7 @@ html {
 }
 
 @media (max-width: 1095px) {
-  .footer____info {
+  .footer__info {
     width: 290px;
     height: auto;
     padding: 20px 30px 20px 30px;
@@ -1016,7 +1021,7 @@ html {
   }
 }
 @media (max-width: 1095px) and (max-width: 400px) {
-  .footer____info {
+  .footer__info {
     top: 70px;
     left: 10px;
     width: 80%;
