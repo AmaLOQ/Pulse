@@ -126,7 +126,7 @@ html {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 90px;
+  margin-top: 60px;
 }
 .promo__header {
   font-weight: 700;
